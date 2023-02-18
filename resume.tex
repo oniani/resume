@@ -19,9 +19,6 @@
 \input{glyphtounicode}
 \pdfgentounicode=1
 
-\renewcommand{\headrulewidth}{0}
-\renewcommand{\footrulewidth}{0}
-
 % Changes the font family
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -34,6 +31,8 @@
 
 \raggedbottom
 \raggedright
+
+% Bullet point indentation
 \setlength{\tabcolsep}{0}
 
 % Sections formatting
@@ -49,7 +48,7 @@
     \vspace{-1pt}
     \item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & #2\\
+        #1 & #2\\
         {\small #3} & {\small #4}\\
     \end{tabular*}\vspace{-4pt}
 }
@@ -78,9 +77,9 @@
 % PDF information and nice-looking urls
 \hypersetup{%
     pdfauthor={David Oniani},
-    pdftitle={David Oniani's CV},
-    pdfsubject={david, oniani, david oniani, cv},
-    pdfkeywords={david, oniani, david oniani, cv},
+    pdftitle={David Oniani's Resume},
+    pdfsubject={david, dave, oniani, david oniani, dave oniani, resume},
+    pdfkeywords={david, dave, oniani, david oniani, dave oniani, resume},
     pdflang={English},
     colorlinks=true,
     linkcolor={black!50!blue},
@@ -99,7 +98,7 @@
 % Heading {{{
 
 \begin{center}
-    \textbf{\href{https://oniani.ai/}{\Huge David Oniani}}\\\vspace{16pt}
+    \href{https://oniani.ai/}{\Huge David Oniani}\\\vspace{16pt}
     \social{mobile}{tel:+16465651224}{+1 (646) 565-1224} \(\circ\)
     \social{globe}{https://oniani.ai/}{oniani.ai} \(\circ\)
     \social{envelope}{mailto:onianidavid@gmail.com}{onianidavid@gmail.com} \(\circ\)
@@ -124,13 +123,13 @@
 
 % Technical Skills {{{
 
-\section{Technical Skills}
+\section{Technical Skills and Natural Languages}
 
 \entriesbegin
-    \entrysubitem{Languages: Python, Rust, Shell Script, Modern C++, PostgreSQL, Lua, Haskell, JavaScript, HTML, CSS}
+    \entrysubitem{Languages: Python, Rust, Shell Script, Modern C++, PostgreSQL, Lua, Haskell, JavaScript, Markdown, \LaTeX, HTML, CSS}
     \entrysubitem{Tools and Libraries: Linux, Neovim, Git, Docker, PyTorch, Transformers, scikit-learn, matplotlib, numpy, pandas, Flask, Zola}
     \entrysubitem{Theory: Applied Statistics, Deep Learning, Information Theory, Linear Algebra, Multivariable Calculus, Real Analysis, Topology}
-    \entrysubitem{Other Skills: \LaTeX, Markdown, Technical Writing}
+    \entrysubitem{Natural Languages: English (Native Proficiency), Georgian (Native Proficiency), Russian (Native Proficiency)}
 \entriesend
 
 % }}}
@@ -155,13 +154,13 @@
     \entryitem{Architected and trained highly performant \href{https://en.wikipedia.org/wiki/Convolutional_neural_network}{CNN}-based DL model for human activity detection}
     \entryitem{Implemented Python APIs and data engineering pipelines for interacting with data platforms}
     \entryitem{Together with Principal Scientist, wrote C++ library of signal processing algorithms (libdsp)}
-    \entryitem{\href{https://www.linkedin.com/company/dawnlight/}{DawnLight} was \href{https://www.sequoiacap.com}{Sequoia Capital} Backed Ambient Intelligence and Edge Computing Startup}
+    \entryitem{\href{https://www.linkedin.com/company/dawnlight/}{DawnLight} was \href{https://www.sequoiacap.com}{Sequoia Capital} Backed \href{https://en.wikipedia.org/wiki/Ambient_intelligence}{Ambient Intelligence} and \href{https://en.wikipedia.org/wiki/Edge_computing}{Edge Computing Startup}}
 \entryitemsend
 
 \entry{\href{https://www.mayoclinic.org/}{Mayo Clinic}}{Rochester, MN}{Artificial Intelligence Researcher}{Feb. 2020 -- Sept. 2020}
 \entryitemsstart
     \entryitem{First-authored papers accepted at leading AI and health informatics conferences and journals}
-    \entryitem{Built \href{https://github.com/oniani/covid-19-chatbot}{chatbot} as extension of GPT-2 model by applying \href{https://en.wikipedia.org/wiki/BERT_(language_model)}{BERT}, BioBERT, USE, and \href{https://en.wikipedia.org/wiki/Tf\%E2\%80\%93idf}{tf-idf}}
+    \entryitem{Built \href{https://github.com/oniani/covid-19-chatbot}{chatbot} as extension of \href{https://en.wikipedia.org/wiki/GPT-2}{GPT-2} model by applying \href{https://en.wikipedia.org/wiki/BERT_(language_model)}{BERT}, BioBERT, USE, and \href{https://en.wikipedia.org/wiki/Tf\%E2\%80\%93idf}{tf-idf}}
     \entryitem{Utilized \href{https://snap.stanford.edu/node2vec/}{node2vec} for generating COVID-19 network embeddings and built \href{https://oniani.ai/covid-19-network/}{co-occurrence network}}
     \entryitem{Worked directly under \href{https://www.mayo.edu/research/faculty/shen-feichen-ph-d/bio-20238745}{Dr.~Feichen Shen} and \href{https://www.shrs.pitt.edu/people/yanshan-wang}{Dr.~Yanshan Wang} in division of \href{https://www.mayo.edu/research/faculty/liu-hongfang-ph-d/bio-00055092}{Dr.~Hongfang Liu}}
 \entryitemsend
@@ -175,10 +174,10 @@
 \section{Select Publications}
 
 \entriesbegin
-    \entrysubitem{\footnotesize\href{https://dl.acm.org/doi/abs/10.1145/3388440.3412413}{A Qualitative Evaluation of Language Models on Automatic Question-Answering for COVID-19}\\Proceedings of the 11th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (ACM-BCB), 2020\\\textbf{First Author}, 30 citations}
-    \entrysubitem{\footnotesize\href{https://academic.oup.com/jamia/article/27/8/1259/5847598}{Constructing Co-occurrence Network Embeddings to Assist Association Extraction for COVID-19 and Other Coronavirus Infectious Diseases}\\Journal of the American Medical Informatics Association (JAMIA), 2020\\\textbf{First Author}, 19 citations}
-    \entrysubitem{\footnotesize\href{https://oniani.ai/pdf/machine_translation.pdf}{Toward Improving Health Literacy in Patient Education Materials with Neural Machine Translation Models}\\American Medical Informatics Association (AMIA) Informatics Summit, 2023\\\textbf{First Author}}
-    \entrysubitem{\footnotesize\href{https://spj.sciencemag.org/journals/hds/aip/9759016/}{Social and Behavioral Determinants of Health in the Era of Artificial Intelligence with Electronic Health Records: A Scoping Review}\\Health Data Science (HDS), 2021\\Co-Author}
+    \entrysubitem{\footnotesize\href{https://dl.acm.org/doi/abs/10.1145/3388440.3412413}{A Qualitative Evaluation of Language Models on Automatic Question-Answering for COVID-19}\\Proceedings of the 11th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (ACM-BCB), 2020\\First Author, 30 citations}
+    \entrysubitem{\footnotesize\href{https://academic.oup.com/jamia/article/27/8/1259/5847598}{Constructing Co-occurrence Network Embeddings to Assist Association Extraction for COVID-19 and Other Coronavirus Infectious Diseases}\\Journal of the American Medical Informatics Association (JAMIA), 2020\\First Author, 19 citations}
+    \entrysubitem{\footnotesize\href{https://oniani.ai/pdf/machine_translation.pdf}{Toward Improving Health Literacy in Patient Education Materials with Neural Machine Translation Models}\\American Medical Informatics Association (AMIA) Informatics Summit, 2023\\First Author, recent article}
+    \entrysubitem{\footnotesize\href{https://spj.sciencemag.org/journals/hds/aip/9759016/}{Social and Behavioral Determinants of Health in the Era of Artificial Intelligence with Electronic Health Records: A Scoping Review}\\Health Data Science (HDS), 2021\\Co-Author, 8 citations}
 \entriesend
 
 % }}}
@@ -197,19 +196,6 @@
     \entrysubitem{7\textsuperscript{th} Place (TOP 10), \href{https://naec.ge/}{National Mathematics Olympiad of Georgia} (2014)}
     \entrysubitem{IMO \& IPhO Nominee, \href{http://mes.gov.ge/?lang=eng}{Ministry of Education and Science of Georgia}, (2014)}
 \entriesend
-
-% }}}
-
-% Natural Language Proficiency {{{
-
-%\section{Natural Language Proficiency}
-%
-%\entriesbegin
-%    \entrysubitem{English, Native}
-%    \entrysubitem{Georgian, Native}
-%    \entrysubitem{Mingrelian, Native}
-%    \entrysubitem{Russian, Native}
-%\entriesend
 
 % }}}
 
